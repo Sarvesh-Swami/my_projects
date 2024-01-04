@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(79,79,79,0.39117653897496496) 0%)
+    ,url('Taj_Mahal_in_India_-_Kristian_Bertel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+nav{
+    color: #fff;
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.165);
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+#logo{
+    width: 25%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: hearbeat 0.4s linear infinite;
+}
+
+@keyframes hearbeat{
+    0%{font-size: 24px;}
+    20%{font-size: 26px;}
+    40%{font-size: 28px;}
+    60%{
+        font-size: 29px;}
+        80%{font-size: 30px;}
+        100%{font-size: 32px;}
+}
+#menu a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 20%;
+    font-weight: 300;
+}
+#menu{
+    width: 39%;
+    display: flex;
+    justify-content: space-around;
+}
+main{
+    flex-direction: column;
+    color: #fff;
+    text-shadow: 4px 4px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 85vh;
+    text-align: center;
+}
+#con h2{
+    font-size: 40px;
+    
+}
+#con h1{
+font-size:65px;
+padding-top: 20px;
+padding-bottom: 20px;
+text-transform: uppercase;
+}
+#con h3{
+    font-size: 30px;
+}
+#bt a{
+text-transform: uppercase;
+text-decoration: none;
+margin: 20px;
+border: 2px solid black;
+border-radius: 4px;
+    padding: 10px;
+    font-weight: bolder;
+}
+#bt {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+}
+
+#bt1{
+    transition: all 0.4s;
+    color: black;
+    background:#fff;
+    text-shadow: none ;
+}
+#bt1:hover{
+    background: rgb(20, 172, 154);
+    color:white;
+    text-shadow: none;  
+}
+#bt2{
+    transition: all 0.6s;
+    background: rgb(20, 172, 154);
+    color:white;
+    text-shadow: none;
+}
+#bt2:hover{
+    color: black;
+    background:#fff;
+    text-shadow: none ; 
+}
+#ch::after{
+    content: '';
+    color:rgb(20, 172, 154);
+    animation: change 5s linear infinite;
+}
+@keyframes change{
+     0%{content:"sujangarh"};
+    20%{content:"jaselmer"}
+    50%{content:"jaipur"}
+    100%{
+        content:"salasar"
+    }
+}
+#menu a:first-child{
+    color: rgb(20, 172, 154);
+}
+
+
+
+
+@media(max-width:1442px){
+    #logo{
+        width: 100%;
+    }
+#menu{
+    width: auto    ;
+    opacity: 0;
+    display: hidden;
+}
+#menu a{
+    width: auto;
+}
+nav{
+    display: block;
+};
+}   

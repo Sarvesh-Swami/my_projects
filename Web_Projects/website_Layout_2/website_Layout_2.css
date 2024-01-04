@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+header{
+width: 100%;
+height: 10vh;
+background-image: linear-gradient(to top,white 75%,#c3f5ff 20%);
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+#logo{
+    background-image: linear-gradient(#8d98e3 40%,#854fee 60%);
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+    animation: anim 2s linear infinite;
+    animation-direction: alternate;
+}
+body{
+    background-image: linear-gradient(to left,white 80%,#c3f5ff 20%);
+
+}
+
+@keyframes anim {
+    form{padding-left: 60%;}
+    to{padding-right:40%;}
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    position: relative;
+}
+nav a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 10%;
+    border-bottom: 2px solid #854fee ;
+    transition: all 0.5s;
+}
+nav a:hover::before{
+    width: 100%;
+}
+#rightside{
+    padding-top: 150px;
+background-color: #c3f5ff  ;
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+#rightside img{
+    max-width: 400px;
+    padding-top: 200px;
+    
+}
+main{
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+#leftside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#leftside h1{
+    font-size: 65px;
+}
+#leftside h3{
+    font-size: 25px;
+}
+#con{
+    margin-top: 200px;
+    
+}
+#con a{
+    margin-right: 55px;
+    margin-left: 55px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding:50px ;
+    background: #854fee;
+    width:100px;
+    height: 10px;
+    text-transform: uppercase;
+    text-decoration:none ;
+}

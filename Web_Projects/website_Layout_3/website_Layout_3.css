@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background: url("img1.jpg");
+}
+header{
+    height: 8vh;
+    display:flex;
+    background: rgba(0, 0, 0, 0.31);
+    text-transform: uppercase;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between      ;
+    
+}
+nav a{
+    font-weight: 500px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+main{
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+main h3{
+    padding-bottom: 140px;
+    word-spacing: 8px;
+    font-size: 25px;
+}
+main h4{
+    
+    word-spacing: 15px;
+padding-top: 48px;
+}
+main h1{
+    padding-bottom: 90px;
+}
+
+#bt1,#bt2{
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right:80px ;
+    padding: 15px;
+  font-size: 15px;
+  font-weight: 800;
+    border-radius: 5px;
+    border: 3px solid white;
+    box-shadow: 2.5px 2.55px 13px 2px rgb(175, 175, 192);
+}
+#bt2{
+    outline: none;
+    background: none;
+}
+#default{
+    color: yellow;
+    border-bottom: 2px solid yellow;
+
+}
+a:hover{
+    color: yellow;
+}
+nav a::before{
+    content: "";
+    width:  0%;
+    top: 110%;
+    left: 0%;
+    border-bottom: 2px solid yellow;
+    position: absolute;
+    transition: all 0.3s;
+}
+nav a:hover::before{
+    width: 100%;
+}
